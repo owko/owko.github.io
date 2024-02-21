@@ -1,0 +1,65 @@
+.introduction_bg {
+  padding: 70px 0;
+  background-image: url(../../../assets/park.jpg);
+  .introduction_header {
+    margin: 0 50px 70px 50px;
+    display: flex;
+    justify-content: space-between;
+    .introduction_header_title {
+      font-size: 36px;
+      color: #fff;
+    }
+    .introduction_header_button {
+      background-color: transparent;
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+  .introduction_content {
+    background-color: #fff;
+    display: flex;
+    margin: 0 55px;
+    .introduction_item {
+      padding: 26px 20px;
+      position: relative;
+      border-right: 1px solid #e6e6e6;
+      .introduction_item_head {
+        left: 0;
+        padding: 0 20px;
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        box-sizing: border-box;
+        transition: .6s;
+        z-index: 1;
+        .introduction_item_title {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        .introduction_item_desc {
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+      }
+      .introduction_item_img {
+        img{
+          width: 100%;
+          transition: .6s;
+        }
+      }
+    }
+    .introduction_item:hover{
+        .introduction_item_head{
+            transition: .6s;
+            z-index: 999;
+            background:transparent;
+            color: #fff;
+            transform:translateY(-10px);
+        }
+        .introduction_item_img {
+            transform: scaleY(1.3) scaleX(1.08);
+            transition: .6s;
+          }
+    }
+  }
+}
